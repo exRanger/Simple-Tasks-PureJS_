@@ -1,28 +1,22 @@
 document.addEventListener('DOMContentLoaded', (e)=>{
-    // Regexs
+    
     const nameField = /^[a-zA-Z\s]{1,120}$/
     const emailField = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     const passwordField = /^[a-zA-Z0-9]{8,}$/
     
-
-
-    
-     
     const {form} = document.forms
-
-    
     const values = {}
     const elements = {}
     
-     
-        for(let element of form){
-            const {name} = element 
+    for(let element of form){
+            
+        const {name} = element 
              
-            if(name){
-                 
-                elements[name] = element  
-            }
-        }  
+        if(name){
+            elements[name] = element  
+        }
+    }  
+
     function showSuccesMessage(input, messageElement){
         input.className = 'success'
         messageElement.innerHTML = 'Correct!'
@@ -52,26 +46,19 @@ document.addEventListener('DOMContentLoaded', (e)=>{
                 console.log('true/')
                 showSuccesMessage(input, messageElement)
                 input.classList.add('correctField')
-                
-
             }else{
                 showErrorMessage(input, messageElement)
                 input.classList.remove('correctField') 
             }
         })
-        
     }
-    
     
     form.onsubmit = (e) => {
         /*
-
             THERE
             iS
             BAD
             CODE
-
-
         */
         e.preventDefault()
         let n = 0;

@@ -5,19 +5,16 @@
 
 .container {
     margin: 0 auto;
-
     max-width: 100%;
     display: flex;
     justify-content: center;
 }
 .wrapper{
-   
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-   
 }
+
 h1{
   text-align: center;
   color:rgb(43, 137, 245);
@@ -30,7 +27,7 @@ h1{
  .error {
   border-color:#ff4b33;
 }
- 
+
 .form-ctrl input{
   width: 200px;
   margin-bottom: 15px;
@@ -41,8 +38,8 @@ h1{
  
 small{
    color:#ff4b33;
-   
 }
+
 button{
   margin-top: 5px;
   font-family: Tahoma;
@@ -53,5 +50,4 @@ button{
   border: 1px solid rgb(175, 212, 255);
   align-self: center;
   cursor: pointer;
-    
 }
