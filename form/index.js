@@ -56,11 +56,6 @@ document.addEventListener('DOMContentLoaded', (e)=>{
     form.onsubmit = (e) => {
         // clear   
     }
-        
-        
-        
-        console.log(values)
-    }
 })
 
 
