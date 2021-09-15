@@ -54,27 +54,10 @@ document.addEventListener('DOMContentLoaded', (e)=>{
     }
     
     form.onsubmit = (e) => {
-        /*
-            THERE
-            iS
-            BAD
-            CODE
-        */
-        e.preventDefault()
-        let n = 0;
+        // clear   
+    }
         
-        for(element of form ){
-            const {name} = element
-            if(name && element.classList.contains('correctField')){
-                n++
-                values[name] = element.value   
-            }  
-        }
         
-        if(n < 2){ 
-            console.log("You need to fill in all the fields to get the values")
-            return
-        }
         
         console.log(values)
     }
