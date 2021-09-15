@@ -1,12 +1,11 @@
 // 1st way
 function getUniqueWords1(str){
     return [...new Set(str.split(' '))].join(' ')
- }
- 
- // 2st  way
+} 
+// 2st  way
  function getUniqueWords2(str){
     const obj = {} 
-    str.split(' ').forEach((item, index)=>{
+    str.split(' ').forEach((item, index) => {
        obj[item] = index
      })
      return Object.keys(obj).join(' ')
@@ -14,10 +13,10 @@ function getUniqueWords1(str){
  // 3rd way
  function getUniqueWords3(str){
    let temp = []
-   str.split(' ').forEach((item, index)=>{
+   str.split(' ').forEach((item, index) => {
      if(!temp.includes(item)){
-        
-       temp.push(item)}
+       temp.push(item)
+     }
    })
    return temp.join(' ')
  }
