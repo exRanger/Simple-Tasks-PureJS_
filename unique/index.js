@@ -20,6 +20,6 @@ function getUniqueWords1(str){
    })
    return temp.join(' ')
  }
- console.log(getUniqueWords1("easy come easy go"));
- console.log(getUniqueWords2("easy come easy go"));
- console.log(getUniqueWords3("easy come easy go"));
+ console.log(getUniqueWords1("easy come easy go")); // come go
+ console.log(getUniqueWords2("easy come easy go")); // come go
+ console.log(getUniqueWords3("easy come easy go")); // come go
